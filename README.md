@@ -1,2 +1,10 @@
-# Deploying-a-Smart-Contract-on-INK
-This guide will walk you through deploying a smart contract on INK using Remix IDE, a popular browser-based development environment for Ethereum smart contracts.
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.19;
+ 
+contract InkContract {
+    string public greeting = "Hello, Ink!";
+    
+    function setGreeting(string memory _greeting) public {
+        greeting = _greeting;
+    }
+}
